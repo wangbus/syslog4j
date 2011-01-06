@@ -20,8 +20,8 @@
     </description>
 
     <scm>
-        <connection>git@github.com:Jimdo/syslog4j.git</connection>
-        <developerConnection>git@github.com:Jimdo/syslog4j.git</developerConnection>
+        <connection>scm:git:git@github.com:Jimdo/syslog4j.git</connection>
+        <developerConnection>scm:git:git@github.com:Jimdo/syslog4j.git</developerConnection>
         <url>https://gtihub.com/Jimdo/syslog4j</url>
     </scm>
 
