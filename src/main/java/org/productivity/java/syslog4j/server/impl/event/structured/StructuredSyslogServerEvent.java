@@ -57,13 +57,14 @@ public class StructuredSyslogServerEvent extends SyslogServerEvent {
 
 		if (i > -1) {
 			this.processId = this.message.substring(0, i).trim();
-			this.message = this.message.substring(i + 1);
 		}
 
-		if (SyslogConstants.STRUCTURED_DATA_NILVALUE.equals(this.processId)) {
-			this.processId = null;
-		}
-	}
+        if (SyslogConstants.STRUCTURED_DATA_NILVALUE.equals(this.processId)) {
+            this.processId = null;
+        }
+
+        this.message = this.message.substring(i + 1);
+    }
 
 	protected void parseDate() {
 		// skip VERSION field
@@ -92,14 +93,14 @@ public class StructuredSyslogServerEvent extends SyslogServerEvent {
 
 		if (i > -1) {
 			this.host = this.message.substring(0, i).trim();
-			this.message = this.message.substring(i + 1);
 		}
 
-		if (SyslogConstants.STRUCTURED_DATA_NILVALUE.equals(this.host)) {
-			this.host = null;
-		}
+        if (SyslogConstants.STRUCTURED_DATA_NILVALUE.equals(this.host)) {
+            this.host = null;
+        }
 
-		parseApplicationName();
+        this.message = this.message.substring(i + 1);
+        parseApplicationName();
 	}
 
 	public String getApplicationName() {
