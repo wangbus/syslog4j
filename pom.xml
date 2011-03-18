@@ -1,9 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.syslog4j</groupId>
     <artifactId>syslog4j</artifactId>
-    <version>0.9.38-jimdo-SNAPSHOT</version>
+    <version>0.9.38-jianshi-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>syslog4j</name>
 
@@ -20,9 +19,9 @@
     </description>
 
     <scm>
-        <connection>scm:git:git@github.com:Jimdo/syslog4j.git</connection>
-        <developerConnection>scm:git:git@github.com:Jimdo/syslog4j.git</developerConnection>
-        <url>https://gtihub.com/Jimdo/syslog4j</url>
+        <connection>scm:git:git@github.com:jianshi/syslog4j.git</connection>
+        <developerConnection>scm:git:git@github.com:jianshi/syslog4j.git</developerConnection>
+        <url>https://gtihub.com/jianshi/syslog4j</url>
     </scm>
 
     <dependencies>
