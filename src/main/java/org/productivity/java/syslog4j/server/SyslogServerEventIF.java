@@ -1,5 +1,6 @@
 package org.productivity.java.syslog4j.server;
 
+import java.net.InetAddress;
 import java.util.Date;
 
 import org.productivity.java.syslog4j.SyslogCharSetIF;
@@ -32,4 +33,6 @@ public interface SyslogServerEventIF extends SyslogCharSetIF {
 	
 	public String getMessage();
 	public void setMessage(String message);
+	
+	public InetAddress getInetAddress();
 }
