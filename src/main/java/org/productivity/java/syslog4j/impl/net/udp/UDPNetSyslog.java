@@ -57,6 +57,7 @@ public class UDPNetSyslog extends AbstractNetSyslog {
    			createDatagramSocket(false);
     	}
     	
+    	// override the getHostAddress() in order to spoof host.
 		InetAddress hostAddress = getHostAddress();
 		
         DatagramPacket packet = new DatagramPacket(

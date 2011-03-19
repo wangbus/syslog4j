@@ -41,6 +41,10 @@ public abstract class AbstractNetSyslog extends AbstractSyslog {
 	public InetAddress getHostAddress() {
 		InetAddress hostAddress = null;
 		
+		if (this.netSyslogConfig.hasSpoofedHostAddress()) {
+			return this.netSyslogConfig.getSpoofedHostAddress();
+		}
+		
 		if (this.netSyslogConfig.isCacheHostAddress()) {
 			if (this.cachedHostAddress == null) {
 				synchronized(cachedHostAddressSyncObject) {

@@ -1,5 +1,7 @@
 package org.productivity.java.syslog4j.impl.net;
 
+import java.net.InetAddress;
+
 import org.productivity.java.syslog4j.impl.AbstractSyslogConfigIF;
 
 /**
@@ -16,4 +18,9 @@ import org.productivity.java.syslog4j.impl.AbstractSyslogConfigIF;
 public interface AbstractNetSyslogConfigIF extends AbstractSyslogConfigIF {
 	public boolean isCacheHostAddress();
 	public void setCacheHostAddress(boolean cacheHostAddress);
+	public InetAddress getSpoofedHostAddress();
+	public void setSpoofedHostAddress(InetAddress spoofedHostAddress);
+	
+	public boolean hasSpoofedHostAddress();
+	
 }
